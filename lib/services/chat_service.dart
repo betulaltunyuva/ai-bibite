@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
 
 class ChatService {
-  final String apiKey = "AIzaSyAfmPRo8i4KMMyf7OTlma4PMuM8V4pK8Nk";
+
 
   Future<String> sendMessage(String userMessage) async {
     try {
