@@ -1,16 +1,30 @@
-# aibibite
+# AI BiBite 🥗🤖
 
-A new Flutter project.
+AI BiBite is an AI-powered nutrition and food recognition mobile application developed with **Flutter** and **Supabase**.
 
-## Getting Started
+The application aims to help users track their meals, analyze nutritional data, and build healthier eating habits using artificial intelligence.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📸 Food recognition using AI
+- 🧠 AI-based nutrition analysis
+- 📊 Meal history tracking
+- 💧 Water intake tracking
+- 🔐 Secure authentication with Supabase
+- 📱 Cross-platform mobile support (Android / iOS)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter (Dart)** – Mobile application development  
+- **Supabase** – Backend, authentication, and database  
+- **AI / ML APIs** – Food recognition and analysis  
+- **SQL** – Database schema and policies  
+
+---
+
+## 📂 Project Structure
+
