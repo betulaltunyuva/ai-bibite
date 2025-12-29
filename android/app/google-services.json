@@ -7,9 +7,28 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:837092471982:android:4131bbf51400cb33f8293f",
+        "android_client_info": {
+          "package_name": "com.betul.aibibite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF0F8icr_2Ge9a8kqMOl6fHmu6F-k5QjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:837092471982:android:1f27cda4b0ba1776f8293f",
         "android_client_info": {
-          "package_name": "com.example.aibibite"
+          "package_name": "com.betul.aibibite"
         }
       },
       "oauth_client": [],
