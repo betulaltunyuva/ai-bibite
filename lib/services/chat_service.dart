@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
 
 class ChatService {
-  final String apiKey = "REMOVED_GEMINI_KEY";
+
 
   Future<String> sendMessage(String userMessage) async {
     try {
