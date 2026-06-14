@@ -26,3 +26,6 @@ The application aims to help users track their meals, analyze nutritional data, 
 
 ---
 
+## 👨‍💻 Developer
+
+**Betül Altunyuva**
