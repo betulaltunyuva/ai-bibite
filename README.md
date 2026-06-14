@@ -26,5 +26,3 @@ The application aims to help users track their meals, analyze nutritional data, 
 
 ---
 
-## 📂 Project Structure
-
