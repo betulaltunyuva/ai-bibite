@@ -3,13 +3,14 @@ import 'package:http/http.dart' as http;
 import 'dart:developer' as developer;
 
 class ChatService {
+  static const String apiKey = String.fromEnvironment('GEMINI_API_KEY');
 
 
   Future<String> sendMessage(String userMessage) async {
     try {
       // API key kontrolü
-      if (apiKey == "YOUR_API_KEY" || apiKey.isEmpty) {
-        return "Hata: API anahtarı ayarlanmamış. Lütfen chat_service.dart dosyasında apiKey değişkenine gerçek API anahtarınızı ekleyin.";
+      if (apiKey.isEmpty) {
+        return "Hata: API anahtarı ayarlanmamış. Uygulamayı --dart-define=GEMINI_API_KEY=... ile çalıştırın.";
       }
 
       final url = Uri.parse(

@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class RecipeService {
-  final String apiKey = "API_KEY";
+  static const String apiKey = String.fromEnvironment('GEMINI_API_KEY');
 
   Future<String> getRecipeRecommendation({
     required String userMessage,

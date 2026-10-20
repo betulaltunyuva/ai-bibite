@@ -156,6 +156,17 @@ The project combines artificial intelligence, food image analysis, personalized 
 
 ---
 
+## 🔧 Getting Started
+
+The Gemini API key is not stored in the repository. Provide it at build time:
+
+```bash
+flutter pub get
+flutter run --dart-define=GEMINI_API_KEY=your_api_key
+```
+
+---
+
 ## 👩‍💻 Developer
 
 **Betül Altunyuva**
