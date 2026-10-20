@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'package:path/path.dart';
 
 class GeminiVisionService {
-  final String apiKey = "REMOVED_GEMINI_KEY";
+  final String apiKey = "API_KEY";
 
   Future<Map<String, dynamic>> analyzeFoodImage(File imageFile) async {
     try {
