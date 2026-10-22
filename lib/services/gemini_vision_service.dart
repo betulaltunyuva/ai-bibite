@@ -14,11 +14,14 @@ class GeminiVisionService {
       final mimeType = _getMimeType(imageFile.path);
 
       final url = Uri.parse(
-          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=$apiKey");
+          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent");
 
       final response = await http.post(
         url,
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey,
+        },
         body: jsonEncode({
           "contents": [
             {
@@ -62,13 +65,16 @@ class GeminiVisionService {
   Future<Map<String, dynamic>> analyzeFoodText(String foodText) async {
     try {
       final url = Uri.parse(
-          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=$apiKey");
+          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent");
 
       final prompt = "$foodText besin değeri nedir? Şu bilgileri JSON formatında döndür: {\"name\": \"yemek adı\", \"calories\": sayı, \"protein\": sayı, \"carbs\": sayı, \"fat\": sayı, \"ingredients\": [\"malzeme1\", \"malzeme2\"]}. Sadece JSON döndür, başka açıklama yapma.";
 
       final response = await http.post(
         url,
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey,
+        },
         body: jsonEncode({
           "contents": [
             {
@@ -121,7 +127,7 @@ class GeminiVisionService {
       final mimeType = _getMimeType(imageFile.path);
 
       final url = Uri.parse(
-          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=$apiKey");
+          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent");
 
       final detailedPrompt = """
 Bu fotoğraftaki yemeğin detaylı besin analizini yap. Aşağıdaki JSON formatını kullanarak tüm bilgileri döndür. Sadece JSON döndür, başka açıklama yapma.
@@ -149,7 +155,10 @@ Bu fotoğraftaki yemeğin detaylı besin analizini yap. Aşağıdaki JSON format
 
       final response = await http.post(
         url,
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey,
+        },
         body: jsonEncode({
           "contents": [
             {
@@ -192,7 +201,7 @@ Bu fotoğraftaki yemeğin detaylı besin analizini yap. Aşağıdaki JSON format
   Future<Map<String, dynamic>> analyzeFoodTextDetailed(String foodText) async {
     try {
       final url = Uri.parse(
-          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=$apiKey");
+          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent");
 
       final detailedPrompt = """
 "$foodText" besin değeri nedir? Aşağıdaki JSON formatını kullanarak tüm bilgileri döndür. Sadece JSON döndür, başka açıklama yapma.
@@ -220,7 +229,10 @@ Bu fotoğraftaki yemeğin detaylı besin analizini yap. Aşağıdaki JSON format
 
       final response = await http.post(
         url,
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey,
+        },
         body: jsonEncode({
           "contents": [
             {

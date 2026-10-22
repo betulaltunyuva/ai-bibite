@@ -158,6 +158,8 @@ The project combines artificial intelligence, food image analysis, personalized 
 
 ## 🔧 Getting Started
 
+The Firebase config file is not stored in the repository. Download `google-services.json` for the `com.betul.aibibite` Android app from the Firebase Console (Project settings → Your apps) and place it at `android/app/google-services.json`.
+
 The Gemini API key is not stored in the repository. Provide it at build time:
 
 ```bash

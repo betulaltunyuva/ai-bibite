@@ -45,3 +45,6 @@ app.*.map.json
 /android/app/release
 
 .env
+# Firebase config (Firebase Console'dan indirilir, repoya eklenmez)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist

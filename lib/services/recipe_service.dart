@@ -29,11 +29,14 @@ Türkçe olarak yanıt ver.
 ''';
 
       final url = Uri.parse(
-          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=$apiKey");
+          "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent");
 
       final response = await http.post(
         url,
-        headers: {"Content-Type": "application/json"},
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey,
+        },
         body: jsonEncode({
           "contents": [
             {

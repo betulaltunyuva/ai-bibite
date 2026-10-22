@@ -25,7 +25,7 @@ class PushNotificationService : FirebaseMessagingService() {
 
     override fun onNewToken(token: String) {
         super.onNewToken(token)
-        Log.d(TAG, "Refreshed token: $token")
+        Log.d(TAG, "FCM token yenilendi")
         
         // If you want to send messages to this application instance or
         // manage this apps subscriptions on the server side, send the
@@ -35,7 +35,7 @@ class PushNotificationService : FirebaseMessagingService() {
 
     private fun sendRegistrationToServer(token: String) {
         // TODO: Implement this method to send token to your app server.
-        Log.d(TAG, "sendRegistrationToServer: $token")
+        Log.d(TAG, "sendRegistrationToServer çağrıldı")
     }
 
     companion object {
